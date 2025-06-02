@@ -11,20 +11,12 @@ function Home() {
                         <p className='text-xl'>
                             "Sua farmácia, sempre ao seu alcance."
                         </p>
-
-                        <div className="flex justify-around gap-4">
-                            <div className='rounded text-white 
-                                            border-white border-solid border-2 py-2 px-4'
-                                >
-                                Adicionar Categoria
-                            </div>
-                        </div>
                     </div>
 
                     <div className="flex justify-center ">
                         <img
-                            src=""
-                            alt=""
+                            src="https://ik.imagekit.io/cai098/logofarmacia.png?updatedAt=1748872149114"
+                            alt="Logo Farmácia"
                             className=''
                         />
                     </div>

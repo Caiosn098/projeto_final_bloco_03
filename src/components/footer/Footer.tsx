@@ -2,16 +2,16 @@ import { GithubLogoIcon, InstagramLogoIcon, LinkedinLogoIcon } from '@phosphor-i
 
 function Footer() {
 
-    let data = new Date().getFullYear()
-
     return (
         <>
             <div className="flex justify-center bg-gray-200 text-red-800">
                 <div className="container flex flex-col items-center py-4">
-                    <p className='text-xl font-bold'>
-                        Caio Nascimento | Copyright: {data}
-                    </p>
-                    <p className='text-lg'>Acesse minhas redes sociais</p>
+                       <img
+                        src="https://ik.imagekit.io/cai098/logofarmacia.png?updatedAt=1748872149114"
+                        alt="Logo Farmácia"
+                        className="h-20 md:h-30 w-auto object-contain"
+                    />
+                    <p className='text-lg'>Acesse nossas redes sociais!</p>
                     <div className='flex gap-2'>
                         <a href="https://www.linkedin.com/in/caio-s-nascimento/" target="_blank">
                             <LinkedinLogoIcon size={48} weight='bold' />
