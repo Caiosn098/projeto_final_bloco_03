@@ -15,8 +15,8 @@ function FormCategoria() {
     async function buscarPorId(id: string) {
         try {
             await buscar(`/categorias/${id}`, setCategoria)
-        } catch (error: any) {
-
+        } catch (error) {
+            alert ("Erro! A categoria não foi encontrada.")
         }
     }
 
@@ -44,16 +44,17 @@ function FormCategoria() {
         if (id !== undefined) {
             try {
                 await atualizar(`/categorias`, categoria, setCategoria)
+                alert ('A categoria foi atualizada com sucesso!')
 
             } catch (error) {
-
+                alert ("Erro! A categoria não foi atualizada.")
             }
         } else {
             try {
                 await cadastrar(`/categorias`, categoria, setCategoria)
-
+                alert ('A categoria foi cadastrada com sucesso!')
             } catch (error) {
-
+                alert ("Erro! A categoria não foi cadastrada.")
             }
 
         }

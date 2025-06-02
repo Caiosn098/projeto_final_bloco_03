@@ -17,7 +17,7 @@ function DeletarCategoria() {
         try {
             await buscar(`/categorias/${id}`, setCategoria)
         } catch (error) {
-    
+             alert ("Erro! A categoria não foi encontrada.")
         }
     }
 
@@ -32,9 +32,9 @@ function DeletarCategoria() {
 
         try {
             await deletar(`/categorias/${id}`)
-
+            alert ('A categoria foi deletada com sucesso!')
         } catch (error) {
-
+            alert ("Erro! A categoria não foi deletada.")
         }
         setIsLoading(false)
         retornar()

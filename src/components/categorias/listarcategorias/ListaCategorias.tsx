@@ -12,6 +12,7 @@ function ListaCategorias() {
         try {
             await buscar('/categorias', setCategorias)
         } catch (error) {
+            alert ("Erro! As categorias não foram encontradas.")
         }
     }
 
